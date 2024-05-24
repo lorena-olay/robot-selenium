@@ -33,9 +33,8 @@ Fill Registration Form
     select from list by label   DateOfBirthDay  4
     select from list by value   DateOfBirthMonth  2
     select from list by value   DateOfBirthYear  1918
-
-    #sleep   3
-    #Click Element    id=register-button
-    #Wait Until Page Contains    Your registration completed
-    #Capture Page Screenshot
+    sleep   3
+    Click Element    id=register-button
+    Wait Until Page Contains    Your registration completed
+    Capture Page Screenshot
 

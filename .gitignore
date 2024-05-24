@@ -2,10 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.idea/
 # C extensions
 *.so
-
+*.html
+*.xml
+*.log
+*.png
 # Distribution / packaging
 .Python
 build/
@@ -158,3 +161,5 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+#notes
+explain_geckodriver.txt

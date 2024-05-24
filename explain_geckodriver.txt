@@ -1,0 +1,35 @@
+En Robot Framework, especialmente cuando se utiliza el navegador Firefox para las pruebas automatizadas, el archivo
+geckodriver.log (o en tu caso, geckodriver-1.log) es un archivo de registro generado por geckodriver. geckodriver es el
+controlador (driver) que actúa como un intermediario entre el navegador Firefox y los scripts de automatización basados
+en el protocolo WebDriver.
+
+Función de geckodriver.log
+Registro de Eventos: Este archivo contiene registros detallados de los eventos y acciones que geckodriver realiza. Esto
+incluye la comunicación entre el navegador y el script de pruebas, los comandos que se envían al navegador,
+y las respuestas del navegador.
+
+Depuración: Es una herramienta crucial para la depuración. Si tus scripts de automatización fallan o no se comportan
+como se espera, puedes revisar este archivo para obtener pistas sobre qué salió mal. El registro puede contener mensajes
+de error, advertencias y otros detalles que ayudan a diagnosticar problemas.
+
+Rastreo de Errores: Si hay problemas de compatibilidad entre geckodriver y la versión de Firefox que estás utilizando,
+o si hay errores en el script de automatización, estos se registrarán en este archivo.
+
+Estructura del Archivo
+El contenido típico del archivo geckodriver.log incluye:
+
+Timestamps: Marcas de tiempo para cada evento registrado.
+Niveles de Log: Niveles de severidad del log (por ejemplo, DEBUG, INFO, WARNING, ERROR).
+Mensajes de Log: Descripciones detalladas de las acciones y eventos.
+IDs de Sesión: Identificadores únicos para las sesiones WebDriver.
+Comandos y Respuestas: Comandos que se envían al navegador y las respuestas que se reciben.
+Uso Común
+Para trabajar con estos logs, sigue estos pasos:
+
+Ejecuta tus Pruebas: Corre tus scripts de pruebas automatizadas utilizando Robot Framework con el navegador Firefox.
+Localiza el Log: Después de la ejecución, localiza el archivo geckodriver-1.log (u otros archivos geckodriver.log si
+hay más de uno).
+Revisa el Contenido: Abre el archivo con un editor de texto y revisa el contenido para encontrar cualquier mensaje de
+error o advertencia.
+Depura el Problema: Utiliza la información del log para depurar y corregir los problemas en tus scripts de
+automatización o en la configuración de geckodriver.
